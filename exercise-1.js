@@ -7,10 +7,8 @@
  */
 
 var sum = function(a, b) {
-    "use strict";
-    /// return ...
-}
-
+  return a + b;
+};
 console.log(sum(8, 11));
 
 /**
@@ -37,13 +35,20 @@ var mark = {
 };
 
 var getAverageTime = function(person) {
-    "use strict";
-    // ... return ...
-}
+  var numberTimes = Object.keys(person).length;
+  // var addedTogether = sum(person);
+  var total = 0;
+  for (var i in person){
+      total += person[i];
+    }
+    return total / numberTimes;
+    }
+  // var sum = 0;
+  // for ()
+  }
 
 console.log(getAverageTime(matt));
 console.log(getAverageTime(mark));
-
 
 /**
  * PART 3
@@ -77,6 +82,8 @@ function addToBank(account, savings, retirement, checking) {
 
 function getSumOfAccounts(account) {
     "use strict";
+    var sum = account.savings + account.retirement + account.checking;
+    return sum;
     // return ...
 }
 

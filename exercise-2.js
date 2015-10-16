@@ -29,6 +29,10 @@ function doSomethingCool() {
 
 // Put your answer below -------------------------
 
+var cool = function(){
+console.log("Something Cool!");
+}
+
 
 // -----------------------------------------------
 
@@ -48,7 +52,11 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-
+var hello = function(){
+  alert("Hello, World!")
+//console.log("Hello, World!")
+}
+setTimeout(hello, 2000);
 
 // -----------------------------------------------
 
@@ -78,7 +86,10 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+B
+This has something to do with the letter y function being inside of ()with an order# of 1.
+Thinking in terms of programming 0 would be first, and 1 second.  Testing this
+principle with letter z and giving an order# 2 we get y then z.
 
 // -----------------------------------------------
 
@@ -100,7 +111,12 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+var reverseStr = function(str) {
+  var arr = str.split(""); arr.reverse(); str = arr.join("");
+  return str;
+};
+reverseStr("dustin");
+//"nitsud"
 
 // -----------------------------------------------
 
@@ -151,7 +167,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+var foo = "bar";
 
 // -----------------------------------------------
 
@@ -204,6 +221,14 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+var increaseScore = function() {
+  var score = 0;
+  score++;
+};
+// or this method
+var decreaseScore = function(score) {
+  score--;
+};
 
 // -----------------------------------------------
 
