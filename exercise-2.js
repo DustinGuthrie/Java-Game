@@ -151,6 +151,19 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+var spanish = {
+  "rojo": "#ff0000",
+  "blanco": "#ffffff",
+  "azul": "#0000ff",
+  "verde": "#00ff00",
+  "negro": "#000000"
+};
+
+var spanishColor = function(colorName){
+return spanish[colorName];
+}
+console.log(spanishColor("verde"));
+
 
 // -----------------------------------------------
 
@@ -192,8 +205,11 @@ var callTenTimes = function(callback) {
 
 // Put your answer below -------------------------
 
-
-
+var callTenTimes = function(callback) {
+  for(var i = 0; i < 10; i++) {
+    console.log(callback);
+  }
+};
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -248,7 +264,11 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+var addNumbers = function(numberA, numberB) {
+   return(numberA + numberB);
 
+};
+var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
 
@@ -274,8 +294,21 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+//NaN is a return value when math functions in a program
+//fail.  So in the example above we do not assign a value
+//to amount therefore the function cannot complete with
+//the given parameters.
 
+var speed = 0;
 
+var accelerate = function(amount) {
+  if (speed === 0) {
+     return speed += 1;
+  }
+    else {
+      return amount;
+    }
+};
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
